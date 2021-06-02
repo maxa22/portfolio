@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 html {
   font-size: 62.5%;
@@ -14,7 +15,8 @@ body {
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
-  color: rgba(0, 0, 0, 0.87);
+  /* color: rgba(0, 0, 0, 0.87); */
+  color: #161e24;
 }
 a {
   display: inline-block;
@@ -262,7 +264,8 @@ a {
 
 /* ABOUT SECTION */
 .about__container,
-.portfolio__container {
+.portfolio__container,
+.contact__container {
   width: 95%;
   margin: 0 auto;
   padding: 7rem 0;
@@ -307,7 +310,8 @@ a {
 
 @media only screen and (min-width: 992px) {
   .about__container,
-  .portfolio__container {
+  .portfolio__container,
+  .contact__container {
     padding: 10rem 7rem;
     max-width: 158rem;
   }
@@ -386,6 +390,68 @@ a {
 }
 
 /* END OF PROJECT SECTION */
+
+/* CONTACT SECTION */
+
+.form__name {
+  display: flex;
+  flex-direction: column;
+}
+.form__input-container {
+  width: 100%;
+  position: relative;
+  height: 6rem;
+}
+.form__input {
+  width: 100%;
+  border-width: 0 0 1px 0;
+  position: absolute;
+  bottom: 0%;
+  outline: none;
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.87);
+  height: 3rem;
+}
+.form__input.active {
+  height: 5rem;
+}
+.form__input.active + .form__label {
+  top: 0;
+}
+.form__label {
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  left: 0;
+  transform: translate(0, -50%);
+  transition: top 0.2s linear;
+  font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 786px) {
+  .form__name {
+    flex-direction: row;
+  }
+  .form__input-container {
+    height: 8rem;
+  }
+  .form__input {
+    font-size: 1.8rem;
+  }
+  .form__label {
+    font-size: 1.8rem;
+  }
+  .contact__form {
+    width: 100%;
+  }
+  .contact__info {
+    width: 30%;
+    margin-right: 5rem;
+    padding-top: 2.4rem;
+  }
+}
+
+/* END OF CONTACT SECTION */
 
 /* utility classes */
 .relative {
@@ -494,6 +560,7 @@ a {
     margin-bottom: 0;
   }
 }
+
 .w-100 {
   width: 100%;
 }
@@ -528,7 +595,23 @@ a {
     justify-content: center;
   }
 }
-
+@media only screen and (min-width: 786px) {
+  .mr-m-l {
+    margin-right: 4rem;
+  }
+  .mb-m-0 {
+    margin-bottom: 0;
+  }
+  .mb-m-m {
+    margin-bottom: 3rem;
+  }
+  .flex-m-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
 @media only screen and (min-width: 992px) {
   .button-container {
     justify-content: flex-start;

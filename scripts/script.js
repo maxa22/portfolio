@@ -63,3 +63,20 @@ function removeTranslateFromLinks(links) {
     link.style.transform = 'translateX(0)';
   }
 }
+
+let formInputs = document.querySelectorAll('.form__input');
+
+for(let formInput of formInputs) {
+  formInput.addEventListener('focus', toggleInputAnimation);
+  formInput.addEventListener('blur', hideInputAnimation);
+}
+
+function toggleInputAnimation() {
+  this.classList.add('active');
+}
+
+function hideInputAnimation() {
+  if(this.value.length < 1) {
+    this.classList.remove('active');
+  }
+}
