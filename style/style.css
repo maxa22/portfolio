@@ -400,20 +400,25 @@ a {
 .form__input-container {
   width: 100%;
   position: relative;
-  height: 6rem;
+}
+.form__textarea-container {
+  height: 8rem;
 }
 .form__input {
   width: 100%;
   border-width: 0 0 1px 0;
-  position: absolute;
-  bottom: 0%;
   outline: none;
   font-size: 1.6rem;
   color: rgba(0, 0, 0, 0.87);
-  height: 3rem;
+  height: 8rem;
+}
+
+.form__input-textarea {
+  padding-top: 1.5rem;
+  padding-bottom: 0.7rem;
 }
 .form__input.active {
-  height: 5rem;
+  height: 8rem;
 }
 .form__input.active + .form__label {
   top: 0;
@@ -432,12 +437,15 @@ a {
   .form__name {
     flex-direction: row;
   }
-  .form__input-container {
+  /* .form__input-container {
     height: 8rem;
-  }
+  } */
   .form__input {
     font-size: 1.8rem;
   }
+  /* .form__input.active {
+    height: 8rem;
+  } */
   .form__label {
     font-size: 1.8rem;
   }

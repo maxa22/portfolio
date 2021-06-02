@@ -65,11 +65,16 @@ function removeTranslateFromLinks(links) {
 }
 
 let formInputs = document.querySelectorAll('.form__input');
+let textarea = document.querySelector('.form__input-textarea');
+let textareaContainer = document.querySelector('.form__textarea-container');
 
 for(let formInput of formInputs) {
   formInput.addEventListener('focus', toggleInputAnimation);
   formInput.addEventListener('blur', hideInputAnimation);
 }
+
+textarea.addEventListener('input', handleTextareaHeight);
+textarea.addEventListener('keyup', e => setTextareaHeightToInitial(e))
 
 function toggleInputAnimation() {
   this.classList.add('active');
@@ -78,5 +83,18 @@ function toggleInputAnimation() {
 function hideInputAnimation() {
   if(this.value.length < 1) {
     this.classList.remove('active');
+  }
+}
+
+function handleTextareaHeight() {
+  if (this.scrollHeight > 80) {
+    this.style.height = this.scrollHeight + 'px';
+    textareaContainer.style.height = this.scrollHeight + 'px';
+  }
+}
+function setTextareaHeightToInitial(event) {
+  if (event.keyCode == 8 || event.keyCode == 46) {
+    textarea.style.height = '8rem';
+    textareaContainer.style.height = '8rem';
   }
 }
