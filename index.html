@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3bb373b9eb.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Mladen portfolio</title>
+</head>
+<body class="relative">
+  <nav class="navigation">
+    <div class="navigation__hamburger">
+      <div class="navigation__hamburger-container">
+        <span class="navigation__hamburger-line navigation__hamburger-one"></span>
+        <span class="navigation__hamburger-line navigation__hamburger-two"></span>
+        <span class="navigation__hamburger-line navigation__hamburger-three"></span>
+      </div>
+    </div>
+    <div class="navigation__container">
+      <div class="navigation__logo">
+        <h2>Mladen</h2>
+      </div>
+      <ul class="navigation__menu">
+        <li class="navigation__menu-item"><a href="#hero" class="navigation__menu-link"> <i class="fas fa-home navigation__menu-icon"></i> <span class="navigation__menu-link-text"> Home </span></a></li>
+        <li class="navigation__menu-item"><a href="#portfolio" class="navigation__menu-link"> <i class="fas fa-briefcase navigation__menu-icon"></i> <span class="navigation__menu-link-text"> Portfolio  </span></a></li>
+        <li class="navigation__menu-item"><a href="#about" class="navigation__menu-link"> <i class="fas fa-user navigation__menu-icon special-font"></i> <span class="navigation__menu-link-text"> About </a></li>
+        <li class="navigation__menu-item"><a href="#contact" class="navigation__menu-link"> <i class="fas fa-envelope navigation__menu-icon"></i> <span class="navigation__menu-link-text"> Contact </span></a></li>
+      </ul>
+    </div>
+  </nav>
+  <header id="hero">
+    <div class="hero">
+      <div class="hero__image"><img src="images/developer.svg" class="hero__image-svg" alt="Web developer"></div>
+      <div class="hero__text">
+        <h1 class="heading-primary"> <span class="weight-400">Hello, I'm Mladen </span><br> <span class="hero__text-description"> WEB DEVELOPER </span></h1>
+        <p class="mb-m heading-primary-sub">Pasionate about tehnology and building things for the web. Interested in working on ambitious projects with positive people.</p>
+        <div class="button-container">  
+          <a href="#about" class="btn btn-outline-secondary mr-s-s mb-xs mb-s-0">About me</a>
+          <a href="#portfolio" class="btn btn-primary">Projects</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="portfolio" >
+      <div class="portfolio__container">
+        <div class="heading-secondary mb-l relative">
+          <h2>Portfolio</h2>
+        </div>
+        <div class="projects">
+          <div class="projects__card">
+            <img class="projects__image" src="images/calculy_project.svg" alt="Calculy project">
+            <div class="projects__text mb-s">
+              <h3 class="mb-s text-center">Calculy</h3>
+              <p class="mb-xl">Marketing calculator project. This app is build for logo designers. You can create your own calculator with
+                multiple questions and options in order to 
+                present to users the cost of making a logo. Made using HTML5, CCS3, JavaScript, PHP.
+              </p>
+              <div class="projects__links">
+                <a href="https://calculy.lab387.com" class="btn btn-outline-primary" target="_blank" rel="noopener">
+                  <span class="mr-xs"> Preview </span> <i class="fas fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="projects__card">
+            <img class="projects__image" src="images/shorty_project.svg" alt="Shorty project">
+            <div class="projects__text mb-s">
+              <h3 class="mb-s text-center">Shorty</h3>
+              <p class="mb-xl">Url shortener app. Make custom links with your username and custom text.
+                You can choose between multiple domains. Made using HTML5, CCS3, JavaScript, PHP.
+              </p>
+              <div class="projects__links">
+                <a href="https://shorty.lab387.com" class="btn btn-outline-primary" target="_blank" rel="noopener">
+                  <span class="mr-xs"> Preview </span> <i class="fas fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="projects__card">
+            <img class="projects__image" src="images/social_project.svg" alt="Social media project">
+            <div class="projects__text">
+              <h3 class="mb-s">Twitter clone</h3>
+              <p class="mb-xl">Twitter clone with functionalities such as posting tweets, sharing and liking.
+                You can also comment on tweets, share comments and like them. You can chat with your friends, and 
+                look at their profile page. Build with Php and Mysql on the backend, and Javascript, CSS and HTML for frontend.
+              </p>
+              <div class="projects__links">
+                <a href="https://mladen.dev.lab387.net/mreza/" class="btn btn-outline-primary" target="_blank" rel="noopener">
+                  <span class="mr-xs"> Preview </span> <i class="fas fa-eye"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="projects__card">
+            <img class="projects__image" src="images/room.svg" alt="Room project">
+            <div class="projects__text">
+              <h3 class="mb-s">E-commerce home page</h3>
+              <p class="mb-xl">Completed Frontend Mentor challenge. Made using HTML5, CCS3, JavaScript.
+              </p>
+              <div class="projects__links">
+                <a href="https://rooms-homepage-maxa22.netlify.app/" class="btn btn-outline-primary" target="_blank" rel="noopener">
+                  <span class="mr-xs"> Preview </span> <i class="fas fa-eye"></i>
+                </a>
+                <a href="https://github.com/maxa22/rooms-homepage" class="btn btn-outline-secondary" target="_blank" rel="noopener">
+                  <span class="mr-xs">Code </span> <i class="fas fa-code"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="about__container">
+        <div class="heading-secondary mb-l relative">
+          <h2>About Me</h2>
+        </div>
+        <div class="about__text">
+          <div class="about__info">
+            <h3 class="mb-s"> Hi there, </h3> 
+            <p> I'm Mladen Đoković, creative and ambitious web developer. Problem solver, patient, ready to cooperate, ready to learn,
+              and always ready to face new challenges. Passionate about writing clean and organized code, 
+              and keen on personal and professional development.</p>
+          </div>
+          <div class="about__skills">
+            <h3 class="mb-s">Skills</h3>
+            <div class="skills">
+              <div class="d-flex flex-column align-center">
+                <i class="fab fa-html5 skills__icon skills__icon-html"></i>
+                <span class="skills__text">HTML 5</span>
+              </div>
+              <div class="d-flex flex-column align-center">
+                <i class="fab fa-css3-alt skills__icon skills__icon-css"></i>
+                <span class="skills__text">CSS 3</span>
+              </div>
+              <div class="d-flex flex-column align-center">
+                <i class="fab fa-js skills__icon skills__icon-js"></i>
+                <span class="skills__text">JavaScript</span>
+              </div>
+              <div class="d-flex flex-column align-center">
+                <i class="fab fa-php skills__icon skills__icon-php"></i>
+                <span class="skills__text">PHP</span>
+              </div>
+              <div class="d-flex flex-column align-center">
+                <i class="fas fa-database skills__icon"></i>
+                <span class="skills__text">MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact__container">
+      </div>
+    </section>
+  </main>
+<script src="scripts/script.js"></script>
+</body>
+</html>
