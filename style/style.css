@@ -204,6 +204,7 @@ a {
   flex-direction: column;
   width: 95%;
   margin: 5rem auto 0;
+  padding-bottom: 5rem;
 }
 .hero__image-svg {
   width: 100%;
@@ -223,6 +224,7 @@ a {
 @media only screen and (min-width: 786px) {
   .hero {
     margin-bottom: 5rem;
+    padding-bottom: 0;
   }
   .heading-primary {
     font-size: 5rem;
@@ -263,7 +265,7 @@ a {
 .portfolio__container {
   width: 95%;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 7rem 0;
 }
 .heading-secondary {
   text-align: left;
@@ -282,6 +284,7 @@ a {
 .skills {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .skills__icon {
   font-size: 8rem;
@@ -305,7 +308,7 @@ a {
 @media only screen and (min-width: 992px) {
   .about__container,
   .portfolio__container {
-    padding: 5rem 7rem;
+    padding: 10rem 7rem;
     max-width: 158rem;
   }
   .about__text {
@@ -455,6 +458,9 @@ a {
 
 .btn:hover::after {
   opacity: 1;
+}
+.mb-xl {
+  margin-bottom: 6rem;
 }
 .mb-l {
   margin-bottom: 4rem;
