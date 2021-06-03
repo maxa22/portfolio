@@ -60,7 +60,7 @@
             <img class="projects__image" src="images/calculy_project.svg" alt="Calculy project">
             <div class="projects__text mb-s">
               <h3 class="mb-s text-center">Calculy</h3>
-              <p class="mb-xl">Marketing calculator project. This app is build for logo designers. You can create your own calculator with
+              <p class="mb-xl text-justify">Marketing calculator project. This app is build for logo designers. You can create your own calculator with
                 multiple questions and options in order to 
                 present to users the cost of making a logo. Made using HTML5, CCS3, JavaScript, PHP.
               </p>
@@ -75,7 +75,7 @@
             <img class="projects__image" src="images/shorty_project.svg" alt="Shorty project">
             <div class="projects__text mb-s">
               <h3 class="mb-s text-center">Shorty</h3>
-              <p class="mb-xl">Url shortener app. Make custom links with your username and custom text.
+              <p class="mb-xl text-justify">Url shortener app. Make custom links with your username and custom text.
                 You can choose between multiple domains. Made using HTML5, CCS3, JavaScript, PHP.
               </p>
               <div class="projects__links">
@@ -88,8 +88,8 @@
           <div class="projects__card">
             <img class="projects__image" src="images/social_project.svg" alt="Social media project">
             <div class="projects__text">
-              <h3 class="mb-s">Twitter clone</h3>
-              <p class="mb-xl">Twitter clone with functionalities such as posting tweets, sharing and liking.
+              <h3 class="mb-s text-center">Twitter clone</h3>
+              <p class="mb-xl text-justify">Twitter clone with functionalities such as posting tweets, sharing and liking.
                 You can also comment on tweets, share comments and like them. You can chat with your friends, and 
                 look at their profile page. Build with Php and Mysql on the backend, and Javascript, CSS and HTML for frontend.
               </p>
@@ -100,14 +100,14 @@
               </div>
             </div>
           </div>
-          <div class="projects__card">
+          <div class="projects__card projects__card-modify">
             <img class="projects__image" src="images/room.svg" alt="Room project">
             <div class="projects__text">
-              <h3 class="mb-s">E-commerce home page</h3>
-              <p class="mb-xl">Completed Frontend Mentor challenge. Made using HTML5, CCS3, JavaScript.
+              <h3 class="mb-s text-center">E-commerce home page</h3>
+              <p class="mb-xl text-justify">Completed Frontend Mentor challenge. Made using HTML5, CCS3, JavaScript.
               </p>
               <div class="projects__links">
-                <a href="https://rooms-homepage-maxa22.netlify.app/" class="btn btn-outline-primary" target="_blank" rel="noopener">
+                <a href="https://rooms-homepage-maxa22.netlify.app/" class="btn btn-outline-primary projects__links-first" target="_blank" rel="noopener">
                   <span class="mr-xs"> Preview </span> <i class="fas fa-eye"></i>
                 </a>
                 <a href="https://github.com/maxa22/rooms-homepage" class="btn btn-outline-secondary" target="_blank" rel="noopener">
@@ -127,7 +127,7 @@
         <div class="about__text">
           <div class="about__info">
             <h3 class="mb-s"> Hi there, </h3> 
-            <p> I'm Mladen Đoković, creative and ambitious web developer. Problem solver, patient, ready to cooperate, ready to learn,
+            <p class="text-justify"> I'm Mladen Đoković, creative and ambitious web developer. Problem solver, patient, ready to cooperate, ready to learn,
               and always ready to face new challenges. Passionate about writing clean and organized code, 
               and keen on personal and professional development.</p>
           </div>
@@ -162,10 +162,10 @@
     <section id="contact">
       <div class="contact__container">
         <div class="heading-secondary mb-xl relative">
-          <h2>Contact</h2>
+          <h2>Let's get in touch</h2>
         </div>
-          <h3 class="mb-m">Feel free to reach out to me for booking, hiring or freelance (gig).</h3>
-          <div class="contact__form">
+          <h3 class="mb-m">Feel free to reach out to me for booking, hiring or freelance.</h3>
+          <form class="contact__form">
             <div class="form__name mb-m-m">
               <div class="form__input-container mb-m mb-m-0 mr-m-l">
                 <input type="text" id="first-name" name="last-name" class="form__input">
@@ -176,15 +176,21 @@
                 <label for="email" class="form__label">Email</label>
               </div>
             </div>
-            <div class="form__input-container form__textarea-container">
+            <div class="form__input-container form__textarea-container mb-l">
               <textarea name="message" id="message" class="form__input form__input-textarea"></textarea>
               <label for="message" class="form__label">Message</label>
             </div>
-          </div>
+            <button class="btn btn-primary">Send</button>
+          </form>
         </div>
       </div>
     </section>
   </main>
+  <footer>
+    <div class="footer__container">
+      Copyright &copy;Mladen Đoković
+    </div>
+  </footer>
 <script src="scripts/script.js"></script>
 </body>
 </html>
