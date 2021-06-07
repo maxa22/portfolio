@@ -1,18 +1,20 @@
 const hamburgerIcon = document.querySelector('.navigation__hamburger');
 const hamburgerContainer = document.querySelector('.navigation__hamburger-container');
 const navLinks = document.querySelectorAll('.navigation__menu-link');
+const navigationOverlay = document.querySelector('.navigation__overlay');
 
 
 hamburgerIcon.addEventListener('click', toggleActiveMenu);
+navigationOverlay.addEventListener('click', toggleActiveMenu);
 
-// remove translate from links if screen is greater than 786px;
+// remove translate from links if screen is greater than 991px;
 
 let widthScreen = window.innerWidth
   || document.documentElement.clientWidth
   || document.body.clientWidth;
 
 
-if (widthScreen > 786) {
+if (widthScreen > 991) {
   removeTranslateFromLinks(navLinks);
 }
 
@@ -20,7 +22,7 @@ window.addEventListener('resize', e => {
   let widthScreen = window.innerWidth
     || document.documentElement.clientWidth
     || document.body.clientWidth;
-  if (widthScreen > 786) {
+  if (widthScreen > 991) {
     removeTranslateFromLinks(navLinks);
   }
 })
@@ -96,5 +98,36 @@ function setTextareaHeightToInitial(event) {
   if (event.keyCode == 8 || event.keyCode == 46) {
     textarea.style.height = '8rem';
     textareaContainer.style.height = '8rem';
+  }
+}
+
+// disable zoom on mobile device
+// define a function to disable zooming
+var zoomDisable = function () {
+  let objHead = document.querySelector('head');
+  objHead.querySelector('meta[name=viewport]').remove();
+  let meta = document.createElement('meta');
+  meta.name = 'viewport';
+  meta.content = 'width=device-width, initial-scale=1.0, user-scalable=0'
+  objHead.prepend(meta);
+};
+
+// ... and another to re-enable it
+var zoomEnable = function () {
+  let objHead = document.querySelector('head');
+  objHead.querySelector('meta[name=viewport]').remove();
+  let meta = document.createElement('meta');
+  meta.name = 'viewport';
+  meta.content = 'width=device-width, initial-scale=1.0, user-scalable=1';
+  objHead.prepend(meta);
+};
+
+// if the device is an iProduct, apply the fix whenever the users touches an input
+if (navigator.userAgent.length && /iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+  // define as many target fields as your like 
+  let inputFields = document.querySelectorAll("input, textarea");
+  for (let inputField of inputFields) {
+    inputField.addEventListener('touchstart', zoomDisable);
+    inputField.addEventListener('touchend', () => { setTimeout(zoomEnable, 500) })
   }
 }

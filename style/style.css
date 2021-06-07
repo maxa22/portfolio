@@ -29,7 +29,7 @@ a {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  z-index: 3;
+  z-index: 4;
 }
 
 .navigation__hamburger-container {
@@ -117,6 +117,19 @@ a {
 .navigation__container.active {
   width: 25rem;
 }
+.navigation__overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  display: none;
+}
+.active + .navigation__overlay {
+  display: block;
+}
 .navigation__logo {
   display: none;
 }
@@ -143,11 +156,12 @@ a {
   background-color: #eee;
 }
 .navigation__menu-icon {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin-right: 1.8rem;
 }
 .navigation__menu-link-text {
   margin-left: 0;
+  font-size: 2rem;
 }
 @media only screen and (min-width: 992px) {
   .navigation__hamburger {
@@ -155,6 +169,9 @@ a {
   }
   .navigation__container.active {
     width: unset;
+  }
+  .active + .navigation__overlay {
+    display: none;
   }
   .navigation__container {
     -webkit-box-shadow: unset;
@@ -183,6 +200,9 @@ a {
   }
   .navigation__menu-icon {
     font-size: 2rem;
+  }
+  .navigation__menu-link-text {
+    font-size: 1.6rem;
   }
   .navigation__menu-link:hover {
     color: #fff;
@@ -287,6 +307,7 @@ a {
 .skills {
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 .skills__icon {
@@ -303,6 +324,9 @@ a {
 }
 .skills__icon-php {
   background-color: #8892bf;
+}
+.skills__icon-sql {
+  color: #00758f;
 }
 .skills__text {
   font-weight: 700;
