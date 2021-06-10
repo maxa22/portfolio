@@ -29,8 +29,8 @@
       </div>
       <ul class="navigation__menu">
         <li class="navigation__menu-item"><a href="#hero" class="navigation__menu-link"> <i class="fas fa-home navigation__menu-icon"></i> <span class="navigation__menu-link-text"> Home </span></a></li>
-        <li class="navigation__menu-item"><a href="#portfolio" class="navigation__menu-link"> <i class="fas fa-briefcase navigation__menu-icon"></i> <span class="navigation__menu-link-text"> Portfolio  </span></a></li>
         <li class="navigation__menu-item"><a href="#about" class="navigation__menu-link"> <i class="fas fa-user navigation__menu-icon special-font"></i> <span class="navigation__menu-link-text"> About </a></li>
+        <li class="navigation__menu-item"><a href="#portfolio" class="navigation__menu-link"> <i class="fas fa-briefcase navigation__menu-icon"></i> <span class="navigation__menu-link-text"> Portfolio  </span></a></li>
         <li class="navigation__menu-item"><a href="#contact" class="navigation__menu-link"> <i class="fas fa-envelope navigation__menu-icon"></i> <span class="navigation__menu-link-text"> Contact </span></a></li>
       </ul>
     </div>
@@ -38,10 +38,10 @@
   </nav>
   <header id="hero">
     <div class="hero">
-      <div class="hero__image"><img src="images/developer.svg" class="hero__image-svg" alt="Web developer"></div>
+      <!-- <div class="hero__image"><img src="images/developer.svg" class="hero__image-svg" alt="Web developer"></div> -->
       <div class="hero__text">
         <h1 class="heading-primary"> <span class="weight-400">Hello, I'm Mladen </span><br> <span class="hero__text-description"> WEB DEVELOPER </span></h1>
-        <p class="mb-m heading-primary-sub">Pasionate about tehnology and building things for the web. Interested in working on ambitious projects with positive people.</p>
+        <p class="heading-primary-sub">Pasionate about tehnology and building things for the web. Interested in working on ambitious projects with positive people.</p>
         <div class="button-container">  
           <a href="#about" class="btn btn-outline-secondary mr-s-s mb-xs mb-s-0">About me</a>
           <a href="#portfolio" class="btn btn-primary">Projects</a>
@@ -50,18 +50,77 @@
     </div>
   </header>
   <main>
-    <section id="portfolio" >
+    
+    <section id="about">
+      <div class="about__container">
+        <div class="mb-xl relative">
+          <h2 class="heading-secondary">About Me</h2>
+        </div>
+        <div class="about__text">
+          <div class="about__info">
+            <h3 class="mb-s"> Hi there, </h3> 
+            <p class="text-justify mb-s"> I'm Mladen Đoković, creative and ambitious web developer. Problem solver, patient, ready to cooperate, ready to learn,
+              and always ready to face new challenges. Passionate about writing clean and organized code, 
+              and keen on personal and professional development.</p>
+            <div class="mb-s">
+              <span class="about__contact">Email:</span><span>mldndjkvc@gmail.com</span>
+            </div>
+            <div class="mb-m">
+              <span class="about__contact">Phone:</span><span>+387 65 176 853</span>
+            </div>
+            <div class="button-container justify-start">
+              <a href="#about" class="btn btn-outline-secondary mr-s-s mb-xs mb-s-0">Contact me</a>
+              <a href="#portfolio" class="btn btn-primary">Download CV</a>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="images/monitor.png" class="w-100" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="skills__container">
+        <div class="mb-xl relative">
+          <h2 class="heading-secondary">Skills</h2>
+        </div>
+        <div class="skills">
+          <div class="d-flex flex-column align-center">
+            <i class="fab fa-html5 fa-5x skills__icon-html"></i>
+            <span class="skills__text">HTML 5</span>
+          </div>
+          <div class="d-flex flex-column align-center">
+            <i class="fab fa-css3-alt fa-5x skills__icon-css"></i>
+            <span class="skills__text">CSS 3</span>
+          </div>
+          <div class="d-flex flex-column align-center">
+            <i class="fab fa-js fa-5x skills__icon-js"></i>
+            <span class="skills__text">JavaScript</span>
+          </div>
+          <div class="d-flex flex-column align-center">
+            <i class="fab fa-php fa-5x skills__icon-php"></i>
+            <span class="skills__text">PHP</span>
+          </div>
+          <div class="d-flex flex-column align-center">
+            <i class="fas fa-database fa-5x skills__icon-sql"></i>
+            <span class="skills__text">MySQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio">
       <div class="portfolio__container">
-        <div class="heading-secondary mb-xl relative">
-          <h2>Portfolio</h2>
+        <div class="mb-xl relative">
+          <h2 class="heading-secondary">Portfolio</h2>
         </div>
         <div class="projects">
           <div class="projects__card">
             <img class="projects__image" src="images/calculy_project.svg" alt="Calculy project">
             <div class="projects__text mb-s">
               <h3 class="mb-s text-center">Calculy</h3>
-              <p class="mb-xl text-justify">Marketing calculator project. This app is build for logo designers. You can create your own calculator with
-                multiple questions and options in order to 
+              <p class="mb-xl text-justify">Marketing calculator project. This app is build for logo designers. You can
+                create your own calculator with
+                multiple questions and options in order to
                 present to users the cost of making a logo. Made using HTML5, CCS3, JavaScript, PHP.
               </p>
               <div class="projects__links">
@@ -90,11 +149,13 @@
             <div class="projects__text">
               <h3 class="mb-s text-center">Twitter clone</h3>
               <p class="mb-xl text-justify">Twitter clone with functionalities such as posting tweets, sharing and liking.
-                You can also comment on tweets, share comments and like them. You can chat with your friends, and 
-                look at their profile page. Build with Php and Mysql on the backend, and Javascript, CSS and HTML for frontend.
+                You can also comment on tweets, share comments and like them. You can chat with your friends, and
+                look at their profile page. Build with Php and Mysql on the backend, and Javascript, CSS and HTML for
+                frontend.
               </p>
               <div class="projects__links">
-                <a href="https://mladen.dev.lab387.net/mreza/" class="btn btn-outline-primary" target="_blank" rel="noopener">
+                <a href="https://mladen.dev.lab387.net/mreza/" class="btn btn-outline-primary" target="_blank"
+                  rel="noopener">
                   <span class="mr-xs"> Preview </span> <i class="fas fa-eye"></i>
                 </a>
               </div>
@@ -107,10 +168,12 @@
               <p class="mb-xl text-justify">Completed Frontend Mentor challenge. Made using HTML5, CCS3, JavaScript.
               </p>
               <div class="projects__links">
-                <a href="https://rooms-homepage-maxa22.netlify.app/" class="btn btn-outline-primary projects__links-first" target="_blank" rel="noopener">
+                <a href="https://rooms-homepage-maxa22.netlify.app/" class="btn btn-outline-primary projects__links-first"
+                  target="_blank" rel="noopener">
                   <span class="mr-xs"> Preview </span> <i class="fas fa-eye"></i>
                 </a>
-                <a href="https://github.com/maxa22/rooms-homepage" class="btn btn-outline-secondary" target="_blank" rel="noopener">
+                <a href="https://github.com/maxa22/rooms-homepage" class="btn btn-outline-secondary" target="_blank"
+                  rel="noopener">
                   <span class="mr-xs">Code </span> <i class="fas fa-code"></i>
                 </a>
               </div>
@@ -119,50 +182,10 @@
         </div>
       </div>
     </section>
-    <section id="about">
-      <div class="about__container">
-        <div class="heading-secondary mb-xl relative">
-          <h2>About Me</h2>
-        </div>
-        <div class="about__text">
-          <div class="about__info">
-            <h3 class="mb-s"> Hi there, </h3> 
-            <p class="text-justify"> I'm Mladen Đoković, creative and ambitious web developer. Problem solver, patient, ready to cooperate, ready to learn,
-              and always ready to face new challenges. Passionate about writing clean and organized code, 
-              and keen on personal and professional development.</p>
-          </div>
-          <div class="about__skills">
-            <h3 class="mb-s">Skills</h3>
-            <div class="skills">
-              <div class="d-flex flex-column align-center">
-                <i class="fab fa-html5 fa-5x skills__icon-html"></i>
-                <span class="skills__text">HTML 5</span>
-              </div>
-              <div class="d-flex flex-column align-center">
-                <i class="fab fa-css3-alt fa-5x skills__icon-css"></i>
-                <span class="skills__text">CSS 3</span>
-              </div>
-              <div class="d-flex flex-column align-center">
-                <i class="fab fa-js fa-5x skills__icon-js"></i>
-                <span class="skills__text">JavaScript</span>
-              </div>
-              <div class="d-flex flex-column align-center">
-                <i class="fab fa-php fa-5x skills__icon-php"></i>
-                <span class="skills__text">PHP</span>
-              </div>
-              <div class="d-flex flex-column align-center">
-                <i class="fas fa-database fa-5x skills__icon-sql"></i>
-                <span class="skills__text">MySQL</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <section id="contact">
       <div class="contact__container">
-        <div class="heading-secondary mb-xl relative">
-          <h2>Let's get in touch</h2>
+        <div class=" mb-xl relative">
+          <h2 class="heading-secondary">Let's get in touch</h2>
         </div>
           <h3 class="mb-m">Feel free to reach out to me for booking, hiring or freelance.</h3>
           <form class="contact__form">
@@ -182,6 +205,18 @@
             </div>
             <button class="btn btn-primary">Send</button>
           </form>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="contact__info">
+        <div class="mb-s">  
+          <span class="about__contact">Name:</span><span>Mladen Đoković</span>
+        </div>
+        <div class="mb-s">  
+          <span class="about__contact">Email:</span><span>mldndjkvc@gmail.com</span>
+        </div>
+        <div class="mb-s">  
+          <span class="about__contact">Phone:</span><span>+387 65 176 853</span>
         </div>
       </div>
     </section>
