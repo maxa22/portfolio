@@ -63,14 +63,14 @@
               and always ready to face new challenges. Passionate about writing clean and organized code, 
               and keen on personal and professional development.</p>
             <div class="mb-s">
-              <span class="about__contact">Email:</span><span>mldndjkvc@gmail.com</span>
+              <a href="mailto:mldndjkvc@gmail.com" class="about__contact">Email:</a><span>mldndjkvc@gmail.com</span>
             </div>
-            <div class="mb-m">
-              <span class="about__contact">Phone:</span><span>+387 65 176 853</span>
+            <div class="mb-l">
+              <a href="tel:0028765176853" class="about__contact">Phone:</a><span>+387 65 176 853</span>
             </div>
             <div class="button-container justify-start">
-              <a href="#about" class="btn btn-outline-secondary mr-s-s mb-xs mb-s-0">Contact me</a>
-              <a href="#portfolio" class="btn btn-primary">Download CV</a>
+              <a href="#contact" class="btn btn-outline-secondary mr-s-s mb-xs mb-s-0">Contact me</a>
+              <a href="images/mladen.pdf" class="btn btn-primary" download>Download CV</a>
             </div>
           </div>
           <div class="about__image">
@@ -86,23 +86,23 @@
         </div>
         <div class="skills">
           <div class="d-flex flex-column align-center">
-            <i class="fab fa-html5 fa-5x skills__icon-html"></i>
+            <i class="fab fa-html5 fa-7x skills__icon-html"></i>
             <span class="skills__text">HTML 5</span>
           </div>
           <div class="d-flex flex-column align-center">
-            <i class="fab fa-css3-alt fa-5x skills__icon-css"></i>
+            <i class="fab fa-css3-alt fa-7x skills__icon-css"></i>
             <span class="skills__text">CSS 3</span>
           </div>
           <div class="d-flex flex-column align-center">
-            <i class="fab fa-js fa-5x skills__icon-js"></i>
+            <i class="fab fa-js fa-7x skills__icon-js"></i>
             <span class="skills__text">JavaScript</span>
           </div>
           <div class="d-flex flex-column align-center">
-            <i class="fab fa-php fa-5x skills__icon-php"></i>
+            <i class="fab fa-php fa-7x skills__icon-php"></i>
             <span class="skills__text">PHP</span>
           </div>
           <div class="d-flex flex-column align-center">
-            <i class="fas fa-database fa-5x skills__icon-sql"></i>
+            <i class="fas fa-database fa-7x skills__icon-sql"></i>
             <span class="skills__text">MySQL</span>
           </div>
         </div>
@@ -187,21 +187,24 @@
         <div class=" mb-xl relative">
           <h2 class="heading-secondary">Let's get in touch</h2>
         </div>
-          <h3 class="mb-m">Feel free to reach out to me for booking, hiring or freelance.</h3>
-          <form class="contact__form">
+          <h3 class="mb-l">Feel free to reach out to me for booking, hiring or freelance.</h3>
+          <form class="contact__form" autocomplete="off">
             <div class="form__name mb-m-m">
               <div class="form__input-container mb-m mb-m-0 mr-m-l">
-                <input type="text" id="first-name" name="last-name" class="form__input">
+                <input type="text" id="first-name" name="fullname" class="form__input">
                 <label for="first-name" class="form__label">Full name</label>
+                <span class="registration-form__error"></span>
               </div>
               <div class="form__input-container mb-m mb-m-0">
                 <input type="email" id="email" name="email" class="form__input">
                 <label for="email" class="form__label">Email</label>
+                <span class="registration-form__error"></span>
               </div>
             </div>
             <div class="form__input-container form__textarea-container mb-l">
-              <textarea name="message" id="message" class="form__input form__input-textarea"></textarea>
+              <textarea name="text" id="message" class="form__input form__input-textarea"></textarea>
               <label for="message" class="form__label">Message</label>
+              <span class="registration-form__error"></span>
             </div>
             <button class="btn btn-primary">Send</button>
           </form>
@@ -209,18 +212,40 @@
       </div>
       <div class="line"></div>
       <div class="contact__info">
-        <div class="mb-s">  
-          <span class="about__contact">Name:</span><span>Mladen Đoković</span>
-        </div>
-        <div class="mb-s">  
-          <span class="about__contact">Email:</span><span>mldndjkvc@gmail.com</span>
-        </div>
-        <div class="mb-s">  
-          <span class="about__contact">Phone:</span><span>+387 65 176 853</span>
+        <div class="contact__info-container">
+          <div class="contact__info-data">
+            <div class="mb-s">  
+              <span class="about__contact">Name:</span><span>Mladen Đoković</span>
+            </div>
+            <div class="mb-s">  
+              <a href="mailto:mldndjkvc@gmail.com" class="about__contact">Email:</a><span>mldndjkvc@gmail.com</span>
+            </div>
+            <div class="mb-s">  
+              <a href="tel:0028765176853" class="about__contact">Phone:</a><span>+387 65 176 853</span>
+            </div>
+          </div>
+          <div class="contact__info-icons">
+            <a href="https://github.com/maxa22" target="_blank" rel="noopener" title="Github account">
+              <i class="fab fa-github fa-3x mr-m"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mladen-%C4%91okovi%C4%87-957013209/" target="_blank" rel="noopener" title="LinkedIn account">
+              <i class="fab fa-linkedin fa-3x"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
   </main>
+  <div class="modal-overlay">
+    <div class="modal">
+      <div class="LoaderBalls">
+        <div class="LoaderBalls__item"></div>
+        <div class="LoaderBalls__item"></div>
+        <div class="LoaderBalls__item"></div>
+      </div>
+    </div>
+  </div>
+  <div class="message"></div>
   <footer>
     <div class="footer__container">
       Copyright &copy;Mladen Đoković

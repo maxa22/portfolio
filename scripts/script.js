@@ -66,20 +66,60 @@ function removeTranslateFromLinks(links) {
   }
 }
 
-let formInputs = document.querySelectorAll('.form__input');
-let textarea = document.querySelector('.form__input-textarea');
-let textareaContainer = document.querySelector('.form__textarea-container');
+var formInputs = document.querySelectorAll('.form__input');
+var spans = document.querySelectorAll('.registration-form__error');
+var textarea = document.querySelector('.form__input-textarea');
+var textareaContainer = document.querySelector('.form__textarea-container');
+var form = document.querySelector('form');
+var modalOverlay = document.querySelector('.modal-overlay');
+var message = document.querySelector('.message');
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  if (areInputsEmpty(formInputs, spans)) return;
+  modalOverlay.classList.add('active');
+  let formData = new FormData(form);
+  postData('includes/send-mail.inc.php', formData)
+  .then(data => {
+    modalOverlay.classList.remove('active');
+    if(!data) {
+      message.classList.add('success');
+      message.innerHTML = 'Message successfully sent';
+      clearInputFields(formInputs);
+      setTimeout(() => { 
+        message.classList.remove('success'); 
+        message.innerHTML='';
+      }, 500)
+    }
+  })
+})
 
 for(let formInput of formInputs) {
-  formInput.addEventListener('focus', toggleInputAnimation);
+  formInput.addEventListener('focus', toggleInputAnimationAndHideErrorMessage);
   formInput.addEventListener('blur', hideInputAnimation);
 }
 
 textarea.addEventListener('input', handleTextareaHeight);
-textarea.addEventListener('keyup', e => setTextareaHeightToInitial(e))
+textarea.addEventListener('keyup', e => setTextareaHeightToInitial(e));
 
-function toggleInputAnimation() {
+
+function toggleInputAnimationAndHideErrorMessage() {
   this.classList.add('active');
+  hideErrorMessage(this);
+}
+
+function clearInputFields(inputs) {
+  for(let input of inputs) {
+    input.value = '';
+    input.classList.remove('active');
+  }
+  restoreInitialHeightAfterSubmit();
+}
+
+function hideErrorMessage(element) {
+  let container = element.parentNode;
+  let span = container.querySelector('span');
+  span.innerHTML = '';
 }
 
 function hideInputAnimation() {
@@ -94,11 +134,37 @@ function handleTextareaHeight() {
     textareaContainer.style.height = this.scrollHeight + 'px';
   }
 }
+
 function setTextareaHeightToInitial(event) {
-  if (event.keyCode == 8 || event.keyCode == 46) {
+  if ((event.keyCode == 8 || event.keyCode == 46) && textarea.value.length < 1) {
     textarea.style.height = '8rem';
     textareaContainer.style.height = '8rem';
   }
+}
+
+function restoreInitialHeightAfterSubmit() {
+  textarea.style.height = '8rem';
+  textareaContainer.style.height = '8rem';
+}
+
+
+function areInputsEmpty(inputs, spans) {
+  let error = 0;
+  for(let i = 0; i < inputs.length; i++) {
+    if(inputs[i].value.trim().length < 1) {
+      spans[i].innerHTML = 'Field can\'t be empty';
+      error++;
+    }
+  }
+  return error;
+}
+
+async function postData(url, data) {
+  const response = await fetch(url, {
+    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    body: data // body data type must match "Content-Type" header
+  });
+  return response.json(); // parses JSON response into native JavaScript object
 }
 
 // disable zoom on mobile device

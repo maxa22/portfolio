@@ -363,18 +363,23 @@ a {
 }
 .skills__icon-css {
   color: #264de4;
+  font-size: 7rem;
 }
 .skills__icon-html {
   color: #fd7e14;
+  font-size: 7rem;
 }
 .skills__icon-js {
   color: #f3cf01;
+  font-size: 7rem;
 }
 .skills__icon-php {
   color: #474a8a;
+  font-size: 7rem;
 }
 .skills__icon-sql {
   color: #00758f;
+  font-size: 7rem;
 }
 .skills__text {
   font-weight: 700;
@@ -413,6 +418,13 @@ a {
   .about__skills {
     width: 100%;
     padding-left: 2rem;
+  }
+  .skills__icon-css,
+  .skills__icon-sql,
+  .skills__icon-html,
+  .skills__icon-js,
+  .skills__icon-php {
+    font-size: 7em;
   }
 }
 
@@ -466,22 +478,32 @@ a {
   position: absolute;
   bottom: 2rem;
   left: 2rem;
+  right: 2rem;
   display: flex;
   flex-direction: column;
+}
+.projects__links .btn {
+  width: 100%;
 }
 .projects__links-first {
   margin-bottom: 1rem;
 }
 @media only screen and (min-width: 370px) {
   .projects__card-modify {
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
   }
+}
+
+@media only screen and (min-width: 576px) {
   .projects__links {
     flex-direction: row;
   }
   .projects__links-first {
     margin-bottom: 0;
     margin-right: 1rem;
+  }
+  .projects__links .btn {
+    width: 50%;
   }
 }
 
@@ -493,10 +515,13 @@ a {
     gap: 3rem;
   }
   .projects__card {
-    padding-bottom: 1rem;
+    padding: 2rem;
     width: calc(50% - 1.5rem);
     margin-bottom: 0;
     margin-top: 0;
+  }
+  .projects__links .btn {
+    width: 16rem;
   }
 }
 
@@ -550,12 +575,25 @@ a {
   font-size: 1.6rem;
   color: #4d5252;
 }
+.registration-form__error {
+  display: block;
+  font-size: 80%;
+  color: #dc3545;
+}
 .line {
   width: 90%;
   margin: 2rem auto 0;
   max-width: 128.5rem;
   height: 2px;
   background-color: #2d2d2d;
+}
+
+.contact__info-icons a {
+  color: #fff;
+}
+
+.contact__info-data {
+  margin-bottom: 3rem;
 }
 
 @media only screen and (min-width: 786px) {
@@ -576,6 +614,14 @@ a {
   }
   .contact__form {
     width: 100%;
+  }
+  .contact__info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contact__info-data {
+    margin-bottom: 0;
   }
 }
 
@@ -633,6 +679,90 @@ footer {
     justify-content: flex-start;
   }
 }
+/* LOADER ON MESSAGE SENDING */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -3;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -3;
+  background-color: var(--background-color);
+  text-align: left;
+  max-width: 54rem;
+  width: 95%;
+}
+.modal-overlay.active {
+  z-index: 10;
+  display: block;
+}
+.active .modal {
+  z-index: 20;
+}
+
+.LoaderBalls {
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.LoaderBalls__item {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #007d9e;
+}
+.LoaderBalls__item:nth-child(1) {
+  animation: bouncing 0.4s alternate infinite
+    cubic-bezier(0.6, 0.05, 0.15, 0.95);
+}
+.LoaderBalls__item:nth-child(2) {
+  animation: bouncing 0.4s 0.1s alternate infinite
+    cubic-bezier(0.6, 0.05, 0.15, 0.95) backwards;
+}
+.LoaderBalls__item:nth-child(3) {
+  animation: bouncing 0.4s 0.2s alternate infinite
+    cubic-bezier(0.6, 0.05, 0.15, 0.95) backwards;
+}
+
+@keyframes bouncing {
+  0% {
+    transform: translate3d(0, 10px, 0) scale(1.2, 0.85);
+  }
+  100% {
+    transform: translate3d(0, -20px, 0) scale(0.9, 1.1);
+  }
+}
+
+.message {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 7rem;
+  left: 50%;
+  transform: translate(-50%);
+  pointer-events: none;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.message.success {
+  opacity: 1;
+  visibility: visible;
+  padding: 1rem 3rem;
+  color: #fff;
+  background-color: #4bb543;
+  z-index: 10;
+}
 
 /* utility classes */
 .relative {
@@ -640,6 +770,9 @@ footer {
 }
 .weight-400 {
   font-weight: 400;
+}
+.text-center {
+  text-align: center;
 }
 .text-left {
   text-align: left;
@@ -739,6 +872,9 @@ button.btn {
 }
 .mr-s {
   margin-right: 2rem;
+}
+.mr-m {
+  margin-right: 3rem;
 }
 .mr-xs {
   margin-right: 0.5rem;
