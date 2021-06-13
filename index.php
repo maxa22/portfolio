@@ -206,7 +206,7 @@
               <label for="message" class="form__label">Message</label>
               <span class="registration-form__error"></span>
             </div>
-            <button class="btn btn-primary">Send</button>
+            <button class="btn btn-large btn-primary">Send message  <i class="fa fa-send ml-xs"></i></button>
           </form>
         </div>
       </div>

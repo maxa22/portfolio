@@ -788,12 +788,15 @@ footer {
   border: 1px solid transparent;
   border-radius: 0.5rem;
   padding: 0.8rem 1.6rem;
-  width: 15rem;
+  width: 16rem;
   text-align: center;
   text-decoration: none;
   transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     color 350ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     border-color 350ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.btn-large {
+  width: 20rem;
 }
 .btn-outline-secondary {
   color: #007d9e;
@@ -878,6 +881,9 @@ button.btn {
 }
 .mr-xs {
   margin-right: 0.5rem;
+}
+.ml-xs {
+  margin-left: 0.5rem;
 }
 @media only screen and (min-width: 500px) {
   .mr-s-s {
