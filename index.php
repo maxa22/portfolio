@@ -4,15 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mladen portfolio</title>
   <meta name="description" content="Creative and ambitious web developer. Problem solver, patient, ready to cooperate.Main stack Php, Javascript, Mysql, CSS and HTML.">
   <meta name="keyword" content="portfolio, javascript, php, developer">
   <meta name="twitter:title" content="Mladen Đoković | Front End Developer | Backend Developer" />
   <meta name="twitter:description" content="Web developer" />
-  <script src="https://kit.fontawesome.com/3bb373b9eb.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <script rel="preload" src="https://kit.fontawesome.com/3bb373b9eb.js" crossorigin="anonymous"></script>
+  <link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+
+  <link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" />
+
+  <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      media="print" onload="this.media='all'" />
+  
   <link rel="stylesheet" href="style/style.css">
-  <title>Mladen portfolio</title>
+  <noscript>
+      <link rel="stylesheet" href="style.css">
+  </noscript>
 </head>
 <body class="relative">
   <nav class="navigation">
@@ -115,7 +128,7 @@
         </div>
         <div class="projects">
           <div class="projects__card">
-            <img class="projects__image" src="images/calculy_project.svg" alt="Calculy project">
+            <img class="projects__image" src="images/calculy_project.png" loading="lazy" alt="Calculy project">
             <div class="projects__text mb-s">
               <h3 class="mb-s text-center">Calculy</h3>
               <p class="mb-xl text-justify">Marketing calculator project. This app is build for logo designers. You can
@@ -131,7 +144,7 @@
             </div>
           </div>
           <div class="projects__card">
-            <img class="projects__image" src="images/shorty_project.svg" alt="Shorty project">
+            <img class="projects__image" src="images/shorty_project.png" loading="lazy" alt="Shorty project">
             <div class="projects__text mb-s">
               <h3 class="mb-s text-center">Shorty</h3>
               <p class="mb-xl text-justify">Url shortener app. Make custom links with your username and custom text.
@@ -145,7 +158,7 @@
             </div>
           </div>
           <div class="projects__card">
-            <img class="projects__image" src="images/social_project.svg" alt="Social media project">
+            <img class="projects__image" src="images/social_project.png" loading="lazy" alt="Social media project">
             <div class="projects__text">
               <h3 class="mb-s text-center">Twitter clone</h3>
               <p class="mb-xl text-justify">Twitter clone with functionalities such as posting tweets, sharing and liking.
@@ -162,7 +175,7 @@
             </div>
           </div>
           <div class="projects__card projects__card-modify">
-            <img class="projects__image" src="images/room.svg" alt="Room project">
+            <img class="projects__image" src="images/room.png" loading="lazy" alt="Room project">
             <div class="projects__text">
               <h3 class="mb-s text-center">E-commerce home page</h3>
               <p class="mb-xl text-justify">Completed Frontend Mentor challenge. Made using HTML5, CCS3, JavaScript.
