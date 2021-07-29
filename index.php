@@ -76,10 +76,10 @@
               and always ready to face new challenges. Passionate about writing clean and organized code, 
               and keen on personal and professional development.</p>
             <div class="mb-s">
-              <a href="mailto:mldndjkvc@gmail.com" class="about__contact">Email:</a><span>mldndjkvc@gmail.com</span>
+              <a href="mailto:mldndjkvc@gmail.com" class="about__contact">Email:<span class="about__contact-span">mldndjkvc@gmail.com</span></a>
             </div>
             <div class="mb-l">
-              <a href="tel:0028765176853" class="about__contact">Phone:</a><span>+387 65 176 853</span>
+              <a href="tel:0028765176853" class="about__contact">Phone:<span class="about__contact-span">+387 65 176 853</span></a>
             </div>
             <div class="button-container justify-start">
               <a href="#contact" class="btn btn-outline-secondary mr-s-s mb-xs mb-s-0">Contact me</a>
@@ -228,13 +228,13 @@
         <div class="contact__info-container">
           <div class="contact__info-data">
             <div class="mb-s">  
-              <span class="about__contact">Name:</span><span>Mladen Đoković</span>
+              <span class="about__contact">Name:</span><span class="about__contact-span">Mladen Đoković</span>
             </div>
             <div class="mb-s">  
-              <a href="mailto:mldndjkvc@gmail.com" class="about__contact">Email:</a><span>mldndjkvc@gmail.com</span>
+              <a href="mailto:mldndjkvc@gmail.com" class="about__contact">Email:<span class="about__contact-span">mldndjkvc@gmail.com</span></a>
             </div>
             <div class="mb-s">  
-              <a href="tel:0028765176853" class="about__contact">Phone:</a><span>+387 65 176 853</span>
+              <a href="tel:0028765176853" class="about__contact">Phone:<span class="about__contact-span">+387 65 176 853</span></a>
             </div>
           </div>
           <div class="contact__info-icons">

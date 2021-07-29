@@ -350,7 +350,11 @@ a {
 }
 .about__contact {
   color: #007d9e;
-  margin-right: 1rem;
+}
+.about__contact-span {
+  margin-left: 1rem;
+  color: #fff;
+  display: inline-block;
 }
 .about__image {
   width: 100%;
