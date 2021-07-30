@@ -10,6 +10,7 @@
   <meta name="twitter:title" content="Mladen Đoković | Front End Developer | Backend Developer" />
   <meta name="twitter:description" content="Web developer" />
   <script rel="preload" src="https://kit.fontawesome.com/3bb373b9eb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="preconnect"
       href="https://fonts.gstatic.com"
       crossorigin />
@@ -49,13 +50,15 @@
     </div>
     <div class="navigation__overlay"></div>
   </nav>
-  <header id="hero">
+  <header id="hero" >
     <div class="hero">
       <!-- <div class="hero__image"><img src="images/developer.svg" class="hero__image-svg" alt="Web developer"></div> -->
       <div class="hero__text">
-        <h1 class="heading-primary"> <span class="weight-400">Hello, I'm Mladen </span><br> <span class="hero__text-description"> WEB DEVELOPER </span></h1>
-        <p class="heading-primary-sub">Pasionate about tehnology and building things for the web. Interested in working on ambitious projects with positive people.</p>
-        <div class="button-container">  
+        <h1 class="heading-primary" data-aos="fade-down" data-aos-duration="1000"> 
+          <span class="weight-400">Hello, I'm Mladen </span><br> <span class="hero__text-description"> WEB DEVELOPER </span>
+        </h1>
+        <p class="heading-primary-sub" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Pasionate about tehnology and building things for the web. Interested in working on ambitious projects with positive people.</p>
+        <div class="button-container" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="1000">  
           <a href="#about" class="btn btn-outline-secondary mr-s-s mb-xs mb-s-0">About me</a>
           <a href="#portfolio" class="btn btn-primary">Projects</a>
         </div>
@@ -71,22 +74,22 @@
         </div>
         <div class="about__text">
           <div class="about__info">
-            <h3 class="mb-s"> Hi there, </h3> 
-            <p class="text-justify mb-s"> I'm Mladen Đoković, creative and ambitious web developer. Problem solver, patient, ready to cooperate, ready to learn,
+            <h3 class="mb-s" data-aos="fade-up" data-aos-duration="500"> Hi there, </h3> 
+            <p class="text-justify mb-s" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500"> I'm Mladen Đoković, creative and ambitious web developer. Problem solver, patient, ready to cooperate, ready to learn,
               and always ready to face new challenges. Passionate about writing clean and organized code, 
               and keen on personal and professional development.</p>
-            <div class="mb-s">
+            <div class="mb-s" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
               <a href="mailto:mldndjkvc@gmail.com" class="about__contact">Email:<span class="about__contact-span">mldndjkvc@gmail.com</span></a>
             </div>
-            <div class="mb-l">
+            <div class="mb-l" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
               <a href="tel:0028765176853" class="about__contact">Phone:<span class="about__contact-span">+387 65 176 853</span></a>
             </div>
-            <div class="button-container justify-start">
+            <div class="button-container justify-start" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
               <a href="#contact" class="btn btn-outline-secondary mr-s-s mb-xs mb-s-0">Contact me</a>
               <a href="images/mladen.pdf" class="btn btn-primary" download>Download CV</a>
             </div>
           </div>
-          <div class="about__image">
+          <div class="about__image" data-aos="flip-right"  data-aos-duration="1000">
             <img src="images/monitor.png" class="w-100" alt="">
           </div>
         </div>
@@ -126,61 +129,85 @@
         <div class="mb-xl relative">
           <h2 class="heading-secondary">Portfolio</h2>
         </div>
-        <div class="projects">
-          <div class="projects__card">
-            <img class="projects__image" src="images/calculy_project.png" loading="lazy" alt="Calculy project">
-            <div class="projects__text mb-s">
-              <h3 class="mb-s text-center">Calculy</h3>
-              <p class="mb-xl text-justify">Marketing calculator project. This app is build for logo designers. You can
+        <div class="projects__card-new" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <div class="projects__text">
+              <h3 class="mb-s">Calculy</h3>
+              <p class="mb-s text-justify">Marketing calculator project. This app is build for logo designers. You can
                 create your own calculator with
                 multiple questions and options in order to
-                present to users the cost of making a logo. Made using HTML5, CCS3, JavaScript, PHP.
+                present to users the cost of making a logo. 
+              <div class="made-with mb-m">
+                <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="0"> HTML5</div>
+                <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"> CCS3</div>
+                <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"> JavaScript</div>
+                <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="300"> PHP</div>
+                <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="400"> MYSQL</div>
+              </div>
               </p>
-              <div class="projects__links">
+              <div class="projects__links-newaos-init aos-animate" data-aos="fade-up" data-aos-delay="0">
                 <a href="https://calculy.lab387.com" class="btn btn-outline-primary" target="_blank" rel="noopener">
                   <span class="mr-xs"> Preview </span> <i class="fas fa-eye"></i>
                 </a>
               </div>
             </div>
+            <img class="projects__image order-2" src="images/calculy_project.png" loading="lazy" alt="Calculy project">
           </div>
-          <div class="projects__card">
+          <div class="projects__card-new" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             <img class="projects__image" src="images/shorty_project.png" loading="lazy" alt="Shorty project">
             <div class="projects__text mb-s">
-              <h3 class="mb-s text-center">Shorty</h3>
-              <p class="mb-xl text-justify">Url shortener app. Make custom links with your username and custom text.
-                You can choose between multiple domains. Made using HTML5, CCS3, JavaScript, PHP.
+              <h3 class="mb-s">Shorty</h3>
+              <p class="mb-s text-justify">Url shortener app. Make custom links with your username and custom text.
+                You can choose between multiple domains.
+                <div class="made-with mb-m">
+                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="0"> HTML5</div>
+                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"> CCS3</div>
+                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"> JavaScript</div>
+                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="300"> PHP</div>
+                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="400"> MYSQL</div>
+                </div>
               </p>
-              <div class="projects__links">
+              <div class="projects__links-newaos-init aos-animate" data-aos="fade-up" data-aos-delay="0">
                 <a href="https://shorty.lab387.com" class="btn btn-outline-primary" target="_blank" rel="noopener">
                   <span class="mr-xs"> Preview </span> <i class="fas fa-eye"></i>
                 </a>
               </div>
             </div>
-          </div>
-          <div class="projects__card">
-            <img class="projects__image" src="images/social_project.png" loading="lazy" alt="Social media project">
+          </div> 
+          <div class="projects__card-new" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             <div class="projects__text">
-              <h3 class="mb-s text-center">Twitter clone</h3>
-              <p class="mb-xl text-justify">Twitter clone with functionalities such as posting tweets, sharing and liking.
+              <h3 class="mb-s">Twitter clone</h3>
+              <p class="mb-s text-justify">Twitter clone with functionalities such as posting tweets, sharing and liking.
                 You can also comment on tweets, share comments and like them. You can chat with your friends, and
-                look at their profile page. Build with Php and Mysql on the backend, and Javascript, CSS and HTML for
-                frontend.
+                look at their profile page.
+                <div class="made-with mb-m">
+                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="0"> HTML5</div>
+                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"> CCS3</div>
+                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"> JavaScript</div>
+                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="300"> PHP</div>
+                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="400"> MYSQL</div>
+                </div>
               </p>
-              <div class="projects__links">
+              <div class="projects__links-new aos-init aos-animate" data-aos="fade-up" data-aos-delay="0">
                 <a href="https://mladen.dev.lab387.net/mreza/" class="btn btn-outline-primary" target="_blank"
                   rel="noopener">
                   <span class="mr-xs"> Preview </span> <i class="fas fa-eye"></i>
                 </a>
               </div>
             </div>
+            <img class="projects__image order-2" src="images/social_project.png" loading="lazy" alt="Social media project">
           </div>
-          <div class="projects__card projects__card-modify">
+          <div class="projects__card-new projects__card-modify" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             <img class="projects__image" src="images/room.png" loading="lazy" alt="Room project">
             <div class="projects__text">
-              <h3 class="mb-s text-center">E-commerce home page</h3>
-              <p class="mb-xl text-justify">Completed Frontend Mentor challenge. Made using HTML5, CCS3, JavaScript.
+              <h3 class="mb-s">E-commerce home page</h3>
+              <p class="mb-s text-justify">Completed Frontend Mentor challenge.
+                <div class="made-with mb-m">
+                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="0"> HTML5</div>
+                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"> CCS3</div>
+                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"> JavaScript</div>
+                </div>
               </p>
-              <div class="projects__links">
+              <div class="projects__links-new aos-init aos-animate" data-aos="fade-up" data-aos-delay="0">
                 <a href="https://rooms-homepage-maxa22.netlify.app/" class="btn btn-outline-primary projects__links-first"
                   target="_blank" rel="noopener">
                   <span class="mr-xs"> Preview </span> <i class="fas fa-eye"></i>
@@ -192,6 +219,7 @@
               </div>
             </div>
           </div>
+        <div class="projects">
         </div>
       </div>
     </section>
@@ -265,5 +293,9 @@
     </div>
   </footer>
 <script src="scripts/script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

@@ -440,7 +440,7 @@ a {
   background-color: rgb(245, 249, 250);
 } */
 
-.projects__card {
+/* .projects__card {
   border-radius: 0.5rem;
   overflow: hidden;
   -webkit-box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
@@ -466,14 +466,37 @@ a {
 }
 .projects__card-modify {
   padding-bottom: 4rem;
+} */
+.projects__card-new {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5rem;
 }
 .projects__image {
   width: 100%;
   display: block;
   filter: drop-shadow(0px 4px 3px rgba(0, 0, 0, 0.8));
+  order: 1;
 }
 .projects__text {
   padding: 0 1rem;
+  order: 2;
+}
+.made-with {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+.made-with-icon {
+  padding: 0.2rem 1.6rem;
+  border-radius: 99rem;
+  background-color: #2d2d2d;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.made-with-icon:not(:last-child) {
+  margin-right: 1rem;
 }
 .projects__text h3 {
   font-weight: 700;
@@ -492,13 +515,13 @@ a {
 .projects__links-first {
   margin-bottom: 1rem;
 }
-@media only screen and (min-width: 370px) {
+/* @media only screen and (min-width: 370px) {
   .projects__card-modify {
     padding-bottom: 5rem;
   }
-}
+} */
 
-@media only screen and (min-width: 576px) {
+/* @media only screen and (min-width: 576px) {
   .projects__links {
     flex-direction: row;
   }
@@ -509,9 +532,9 @@ a {
   .projects__links .btn {
     width: 50%;
   }
-}
+} */
 
-@media only screen and (min-width: 786px) {
+/* @media only screen and (min-width: 786px) {
   .projects {
     display: flex;
     justify-content: flex-start;
@@ -526,6 +549,28 @@ a {
   }
   .projects__links .btn {
     width: 16rem;
+  }
+} */
+
+@media screen and (min-width: 992px) {
+  .projects__card-new {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+  }
+  .projects__card-new h3 {
+    font-size: 3rem;
+  }
+  .projects__card-new img {
+    width: 40%;
+  }
+  .projects__card-new > div {
+    width: 55%;
+  }
+  .projects__image.order-2 {
+    order: 2;
   }
 }
 
@@ -888,6 +933,9 @@ button.btn {
 }
 .ml-xs {
   margin-left: 0.5rem;
+}
+.pl-m {
+  padding-left: 3rem;
 }
 @media only screen and (min-width: 500px) {
   .mr-s-s {
