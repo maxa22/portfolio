@@ -257,6 +257,7 @@ a {
 .heading-primary {
   font-size: 4rem;
   margin-bottom: 2rem;
+  line-height: 1.2;
 }
 .heading-primary-sub {
   margin-bottom: 3rem;
@@ -316,6 +317,19 @@ a {
 /* END HERO SECTION */
 
 /* ABOUT SECTION */
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.skills-section > div {
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+.skills-section > div > i {
+  margin-right: 0.5rem;
+  font-size: 2rem;
+}
 .about__container,
 .portfolio__container,
 .contact__container,
@@ -365,21 +379,36 @@ a {
   gap: 2rem;
   flex-wrap: wrap;
 }
+.css {
+  color: #264de4;
+}
 .skills__icon-css {
   color: #264de4;
   font-size: 7rem;
+}
+.html {
+  color: #fd7e14;
 }
 .skills__icon-html {
   color: #fd7e14;
   font-size: 7rem;
 }
+.js {
+  color: #f3cf01;
+}
 .skills__icon-js {
   color: #f3cf01;
   font-size: 7rem;
 }
+.php {
+  color: #474a8a;
+}
 .skills__icon-php {
   color: #474a8a;
   font-size: 7rem;
+}
+.sql {
+  color: #00758f;
 }
 .skills__icon-sql {
   color: #00758f;
@@ -417,7 +446,7 @@ a {
     margin-bottom: 0;
   }
   .about__image {
-    width: 50%;
+    width: 60%;
   }
   .about__skills {
     width: 100%;

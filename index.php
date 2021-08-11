@@ -75,9 +75,16 @@
         <div class="about__text">
           <div class="about__info">
             <h3 class="mb-s" data-aos="fade-up" data-aos-duration="500"> Hi there, </h3> 
-            <p class="text-justify mb-s" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500"> I'm Mladen Đoković, creative and ambitious web developer. Problem solver, patient, ready to cooperate, ready to learn,
+            <p class="text-justify" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500"> I'm Mladen Đoković, creative and ambitious web developer. Problem solver, patient, ready to cooperate, ready to learn,
               and always ready to face new challenges. Passionate about writing clean and organized code, 
-              and keen on personal and professional development.</p>
+              and keen on personal and professional development. Current skills:</p>
+            <div class="mb-s skills-section" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
+              <div><i class="fab fa-php php"></i> <span>PHP</span></div>
+              <div><i class="fab fa-js js"></i> <span>Javascript</span></div>
+              <div><i class="fas fa-database sql"></i> <span>MySql</span></div>
+              <div><i class="fab fa-css3-alt css"></i> <span>CSS</span></div>
+              <div><i class="fab fa-html5 html"></i> <span>HTML5</span></div>
+            </div>
             <div class="mb-s" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
               <a href="mailto:mldndjkvc@gmail.com" class="about__contact">Email:<span class="about__contact-span">mldndjkvc@gmail.com</span></a>
             </div>
@@ -90,36 +97,7 @@
             </div>
           </div>
           <div class="about__image" data-aos="flip-right"  data-aos-duration="1000">
-            <img src="images/monitor.png" class="w-100" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="skills">
-      <div class="skills__container">
-        <div class="mb-xl relative">
-          <h2 class="heading-secondary">Skills</h2>
-        </div>
-        <div class="skills">
-          <div class="d-flex flex-column align-center">
-            <i class="fab fa-html5 fa-7x skills__icon-html"></i>
-            <span class="skills__text">HTML 5</span>
-          </div>
-          <div class="d-flex flex-column align-center">
-            <i class="fab fa-css3-alt fa-7x skills__icon-css"></i>
-            <span class="skills__text">CSS 3</span>
-          </div>
-          <div class="d-flex flex-column align-center">
-            <i class="fab fa-js fa-7x skills__icon-js"></i>
-            <span class="skills__text">JavaScript</span>
-          </div>
-          <div class="d-flex flex-column align-center">
-            <i class="fab fa-php fa-7x skills__icon-php"></i>
-            <span class="skills__text">PHP</span>
-          </div>
-          <div class="d-flex flex-column align-center">
-            <i class="fas fa-database fa-7x skills__icon-sql"></i>
-            <span class="skills__text">MySQL</span>
+            <img src="images/monitor_2.png" class="w-100" alt="">
           </div>
         </div>
       </div>
@@ -135,86 +113,83 @@
               <p class="mb-s text-justify">Marketing calculator project. This app is build for logo designers. You can
                 create your own calculator with
                 multiple questions and options in order to
-                present to users the cost of making a logo. 
-              <div class="made-with mb-m">
-                <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="0"> HTML5</div>
-                <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"> CCS3</div>
-                <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"> JavaScript</div>
-                <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="300"> PHP</div>
-                <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="400"> MYSQL</div>
+                present to users the cost of making a logo. </p>
+              <div class="made-with mb-m" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <div class="made-with-icon " data-aos="fade-up" data-aos-delay="0"> HTML5</div>
+                <div class="made-with-icon " data-aos="fade-up" data-aos-delay="100"> CCS3</div>
+                <div class="made-with-icon " data-aos="fade-up" data-aos-delay="200"> JavaScript</div>
+                <div class="made-with-icon " data-aos="fade-up" data-aos-delay="300"> PHP</div>
+                <div class="made-with-icon " data-aos="fade-up" data-aos-delay="400"> MYSQL</div>
               </div>
-              </p>
-              <div class="projects__links-newaos-init aos-animate" data-aos="fade-up" data-aos-delay="0">
-                <a href="https://calculy.lab387.com" class="btn btn-outline-primary" target="_blank" rel="noopener">
+              <div class="projects__links-new" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <a href="https://calculy.lab387.com" class="btn btn-primary" target="_blank" rel="noopener">
                   <span class="mr-xs"> Preview </span> <i class="fas fa-eye"></i>
                 </a>
               </div>
             </div>
             <img class="projects__image order-2" src="images/calculy_project.png" loading="lazy" alt="Calculy project">
           </div>
-          <div class="projects__card-new" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-            <img class="projects__image" src="images/shorty_project.png" loading="lazy" alt="Shorty project">
+          <div class="projects__card-new">
+            <img class="projects__image" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" src="images/shorty_project.png" loading="lazy" alt="Shorty project">
             <div class="projects__text mb-s">
-              <h3 class="mb-s">Shorty</h3>
-              <p class="mb-s text-justify">Url shortener app. Make custom links with your username and custom text.
-                You can choose between multiple domains.
-                <div class="made-with mb-m">
-                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="0"> HTML5</div>
-                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"> CCS3</div>
-                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"> JavaScript</div>
-                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="300"> PHP</div>
-                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="400"> MYSQL</div>
+              <h3 class="mb-s" data-aos="fade-up" data-aos-delay="200" class="made-with mb-m" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Shorty</h3>
+              <p class="mb-s text-justify" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Url shortener app. Make custom links with your username and custom text.
+                You can choose between multiple domains.</p>
+                <div class="made-with mb-m" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                  <div class="made-with-icon " data-aos="fade-up" data-aos-delay="0"> HTML5</div>
+                  <div class="made-with-icon " data-aos="fade-up" data-aos-delay="100"> CCS3</div>
+                  <div class="made-with-icon " data-aos="fade-up" data-aos-delay="200"> JavaScript</div>
+                  <div class="made-with-icon " data-aos="fade-up" data-aos-delay="300"> PHP</div>
+                  <div class="made-with-icon " data-aos="fade-up" data-aos-delay="400"> MYSQL</div>
                 </div>
-              </p>
-              <div class="projects__links-newaos-init aos-animate" data-aos="fade-up" data-aos-delay="0">
-                <a href="https://shorty.lab387.com" class="btn btn-outline-primary" target="_blank" rel="noopener">
+              <div class="projects__links-new" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <a href="https://shorty.lab387.com" class="btn btn-primary" target="_blank" rel="noopener">
                   <span class="mr-xs"> Preview </span> <i class="fas fa-eye"></i>
                 </a>
               </div>
             </div>
           </div> 
-          <div class="projects__card-new" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+          <div class="projects__card-new">
             <div class="projects__text">
-              <h3 class="mb-s">Twitter clone</h3>
-              <p class="mb-s text-justify">Twitter clone with functionalities such as posting tweets, sharing and liking.
+              <h3 class="mb-s" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Twitter clone</h3>
+              <p class="mb-s text-justify" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Twitter clone with functionalities such as posting tweets, sharing and liking.
                 You can also comment on tweets, share comments and like them. You can chat with your friends, and
-                look at their profile page.
-                <div class="made-with mb-m">
-                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="0"> HTML5</div>
-                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"> CCS3</div>
-                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"> JavaScript</div>
-                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="300"> PHP</div>
-                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="400"> MYSQL</div>
+                look at their profile page.</p>
+                <div class="made-with mb-m" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                  <div class="made-with-icon " data-aos="fade-up" data-aos-delay="0"> HTML5</div>
+                  <div class="made-with-icon " data-aos="fade-up" data-aos-delay="100"> CCS3</div>
+                  <div class="made-with-icon " data-aos="fade-up" data-aos-delay="200"> JavaScript</div>
+                  <div class="made-with-icon " data-aos="fade-up" data-aos-delay="300"> PHP</div>
+                  <div class="made-with-icon " data-aos="fade-up" data-aos-delay="400"> MYSQL</div>
                 </div>
-              </p>
-              <div class="projects__links-new aos-init aos-animate" data-aos="fade-up" data-aos-delay="0">
-                <a href="https://mladen.dev.lab387.net/mreza/" class="btn btn-outline-primary" target="_blank"
+              <div class="projects__links-new " data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <a href="https://mladen.dev.lab387.net/mreza/" class="btn btn-primary" target="_blank"
                   rel="noopener">
                   <span class="mr-xs"> Preview </span> <i class="fas fa-eye"></i>
                 </a>
               </div>
             </div>
-            <img class="projects__image order-2" src="images/social_project.png" loading="lazy" alt="Social media project">
+            <img class="projects__image order-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" src="images/social_project.png" loading="lazy" alt="Social media project">
           </div>
-          <div class="projects__card-new projects__card-modify" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-            <img class="projects__image" src="images/room.png" loading="lazy" alt="Room project">
+          <div class="projects__card-new projects__card-modify">
+            <img class="projects__image" data-aos="fade-up"  data-aos-delay="200" data-aos-duration="1000" src="images/quizy_project.png" loading="lazy" alt="Room project">
             <div class="projects__text">
-              <h3 class="mb-s">E-commerce home page</h3>
-              <p class="mb-s text-justify">Completed Frontend Mentor challenge.
-                <div class="made-with mb-m">
-                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="0"> HTML5</div>
-                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="100"> CCS3</div>
-                  <div class="made-with-icon aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"> JavaScript</div>
-                </div>
-              </p>
-              <div class="projects__links-new aos-init aos-animate" data-aos="fade-up" data-aos-delay="0">
-                <a href="https://rooms-homepage-maxa22.netlify.app/" class="btn btn-outline-primary projects__links-first"
+              <h3 class="mb-s" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Quizy</h3>
+              <p class="mb-s text-justify" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                Create quiz with custom colors, fonts and images. 
+                Add questions and multiple options. 
+                Also, you can easily connect your marketing applications like Mailchimp, SendinBlue, MailerLite, Google Analytics and Facebook Pixel.</p>
+              <div class="made-with mb-m" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <div class="made-with-icon " data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000"> HTML5</div>
+                <div class="made-with-icon " data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"> CCS3</div>
+                <div class="made-with-icon " data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"> JavaScript</div>
+                <div class="made-with-icon " data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000"> PHP</div>
+                <div class="made-with-icon " data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000"> MYSQL</div>
+              </div>
+              <div class="projects__links-new" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <a href="https://quizy.lab387.com" class="btn btn-primary"
                   target="_blank" rel="noopener">
                   <span class="mr-xs"> Preview </span> <i class="fas fa-eye"></i>
-                </a>
-                <a href="https://github.com/maxa22/rooms-homepage" class="btn btn-outline-secondary" target="_blank"
-                  rel="noopener">
-                  <span class="mr-xs">Code </span> <i class="fas fa-code"></i>
                 </a>
               </div>
             </div>
